@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_layout" >
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/username"
+                android:textColor="#ff000000"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/login_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@null"
+                android:hint="@string/login_account_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:text="@string/login_password"
+                android:textColor="#ff000000"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:background="@null"
+                android:hint="@string/login_password_hint"
+                android:maxLines="1"
+                android:password="true"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <CheckBox
+            android:id="@+id/login_rememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="15dp"
+            android:button="@drawable/login_checkbox_selector"
+            android:checked="true"
+            android:paddingLeft="30dip"
+            android:text="@string/login_rememberMe"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <Button
+            android:layout_marginTop="30dip"
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/login"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</RelativeLayout>
